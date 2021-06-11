@@ -26,16 +26,16 @@ void setup() {
 }
 
 void loop() {
-  do{
-    delay(250);
-    distance = sonar.ping_cm();
-    Serial.print(distance);
-    Serial.println("cm");
-    DriveStraight(0);
-  }  while (distance > 10 || distance == 0);
+//  do{
+//    delay(250);
+//    distance = sonar.ping_cm();
+//    Serial.print(distance);
+//    Serial.println("cm");
+//    DriveStraight(0);
+//  }  while (distance > 10 || distance == 0);
   delay(500);
-  DriveBackward(500);
-  
+//  DriveBackward(500);
+  DriveStraight(500);
 }
 
 int DriveStraight(int time){
