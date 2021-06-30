@@ -11,7 +11,7 @@ int i=0;
 
 void setup() {
   myservo.attach(11);
-  myservo.write(0);
+  myservo.write(180);
   //myservo.write(180);
 }
 
