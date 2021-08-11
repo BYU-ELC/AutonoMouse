@@ -2,13 +2,12 @@
  by BARRAGAN <http://barraganstudio.com>
  This example code is in the public domain.
 
- modified 7 July 2021
+ modified 22 July 2021
  by Josh Miller
 
- * modifications were made to this code for part 2 of lab 3. This code combines code
- * by Rui Santos (Complete project details at https://randomnerdtutorials.com) with this 
- * original code for the AutonoMouse project in BYU's ECEN 191 course. 
-  
+ * Modifications were made to this code for BYU's ECEN 191 class. This code is being used to 
+ * Drive a continuous servo not a normal servo. 
+
  modified 8 Nov 2013
  by Scott Fitzgerald
  
@@ -37,26 +36,14 @@
  * In this example, we just connect ESP32 ground to servo ground. The servo signal pins
  * connect to any available GPIO pins on the ESP32 (in this example, we use pin 18.
  * 
+ * In this example, we assume a Tower Pro MG995 large servo connected to an external power source.
+ * The published min and max for this servo is 1000 and 2000, respectively, so the defaults are fine.
+ * These values actually drive the servos a little past 0 and 180, so
+ * if you are particular, adjust the min and max values to match your needs.
  */
  
 #include <ESP32Servo.h>
-#include "BluetoothSerial.h"
-
- // Check if Bluetooth configs are enabled
-#if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
-#error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
-#endif
-
-// Bluetooth Serial object
-BluetoothSerial SerialBT;
-
-// GPIO where LED is connected to
-const int ledPin =  25;
-
-// Handle received and sent messages
-String message = "";
-char incomingChar;
-
+ 
 Servo myservo;  // create servo object to control a servo
 // 16 servo objects can be created on the ESP32
  
@@ -75,34 +62,18 @@ void setup() {
   // using default min/max of 1000us and 2000us
   // different servos may require different min/max settings
   // for an accurate 0 to 180 sweep
-  myservo.write(90);
-  
-  Serial.begin(115200);
-  // Bluetooth device name
-  SerialBT.begin("ESP32");
-  Serial.println("The device started, now you can pair it with bluetooth!");
 }
  
 void loop() {
-  if (SerialBT.available()){
-    char incomingChar = SerialBT.read();
-    if (incomingChar != '\n'){
-      message += String(incomingChar);
-    }
-    else{
-      message = "";
-    }
-    Serial.write(incomingChar);
-  }
-  // Check received message and control output accordingly
-  if (message == "servo_clockwise"){
-    myservo.write(0);
-  }
-  else if (message == "servo_counter-clockwise"){
-    myservo.write(180);
-  }
-  else if (message == "servo_off"){
-    myservo.write(90);
-  }
-  delay(20);
+  myservo.write(180); // drive motor counter-clockwise for 5 seconds // COMMENT OUT THESE TWO LINES
+  delay(5000);
+//  myservo.write(0); // drive motor counter-clockwise for 5 seconds // UNCOMMENT OUT THESE TWO LINES
+//  delay(5000);
+
+//  myservo.write(90); // stop motor for 1 second
+//  delay(1000);
+//  myservo.write(0); // try to drive motor clockwise for 5 seconds
+//  delay(5000);
+//  myservo.write(90); // stop motor for 1 second
+//  delay(1000);
 }
