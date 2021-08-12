@@ -1,0 +1,4 @@
+1. Did you attempt the lab?
+2. What did you learn about sensors?
+3. Did you make the HC-SR04 sensor circuit?
+4. Did you read data from the HC-SR04 via the serial monitor?

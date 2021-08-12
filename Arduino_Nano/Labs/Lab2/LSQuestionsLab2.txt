@@ -1,0 +1,5 @@
+1. Did you attempt the lab?
+2. What is a breadboard?
+3. Did you download Arduino IDE?
+4. Did you blink the LED?
+5. Extra Credit: Did you change the period the LED blinked for?

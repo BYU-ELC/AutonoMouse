@@ -1,0 +1,5 @@
+1. Did you attempt the lab?
+2. Did attach everything to your base?
+3. Did your electronics work correctly?
+4. Does your car run the code provided with this lab?
+Extra Credit: Did you change the code to make your car do something else that's cool? What?

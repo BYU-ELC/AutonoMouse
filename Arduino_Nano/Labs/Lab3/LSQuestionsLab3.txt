@@ -1,0 +1,5 @@
+1. Did you attempt the lab?
+2. What did you learn about servos?
+3. Did you power the servo from your Arduino Nano?
+4. Did you power the servo from your 9V battery?
+Extra Credit: Did you power your servo and Arduino Nano using your 9V battery?

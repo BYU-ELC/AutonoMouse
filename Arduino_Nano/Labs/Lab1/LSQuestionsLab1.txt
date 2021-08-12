@@ -1,0 +1,4 @@
+1. Did you attempt the lab?
+2. Did you read the section about Arduino?
+3. Did you read the section about soldering and look at the extra material?
+2. Did you solder the pins to your Arduino Nano? / Upload a picture of your Arduino Nano.
