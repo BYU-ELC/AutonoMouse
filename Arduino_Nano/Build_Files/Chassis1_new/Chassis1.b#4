@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -185,7 +185,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6bXlieXUyMDM" projecturn="a.YnVzaW5lc3M6bXlieXUyMDMjRDIwMjAwOTExMzMxODQ5MDAx" f3durn="urn:adsk.wipprod:dm.lineage:_vmLJt-ASsy2URL7-_TXFw" pcbguid="6683cb3b-3e75-4d4a-940e-db3569a474c9" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="55cc3298-f28b-4a3b-969a-501d779fe28b" lastsyncedrevisionid="55cc3298-f28b-4a3b-969a-501d779fe28b" lastboardhashguid="c836a69a-3e8f-fd32-5810-777139e5d419" lastpushedtime="2020-09-22T22:17:45Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6bXlieXUyMDM" projecturn="a.YnVzaW5lc3M6bXlieXUyMDMjRDIwMjAwOTExMzMxODQ5MDAx" f3durn="urn:adsk.wipprod:dm.lineage:_vmLJt-ASsy2URL7-_TXFw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="55cc3298-f28b-4a3b-969a-501d779fe28b" lastsyncedrevisionid="55cc3298-f28b-4a3b-969a-501d779fe28b" lastboardhashguid="c836a69a-3e8f-fd32-5810-777139e5d419" lastpushedtime="2020-09-22T22:17:45Z" linktopcb3d="false"/>
 <plain>
 <wire x1="25.4" y1="0" x2="66.04" y2="0" width="0" layer="20"/>
 <wire x1="91.44" y1="33.02" x2="91.44" y2="101.6" width="0" layer="20"/>
@@ -934,6 +934,16 @@ Information on the &quot;restring&quot; settings can be found
 <vertex x="25.5524" y="33.2486"/>
 <vertex x="0.3302" y="33.2486"/>
 </polygon>
+<contactref element="S1" pad="1"/>
+<wire x1="55.88" y1="73.66" x2="53.34" y2="83.82" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="83.82" x2="53.34" y2="83.82" width="0" layer="19" extent="1-1"/>
+<wire x1="41.148" y1="94.742" x2="38.1" y2="83.82" width="0" layer="19" extent="1-1"/>
+<wire x1="60.96" y1="58.42" x2="55.88" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="52.578" y1="49.403" x2="60.96" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="52.578" y1="45.593" x2="52.578" y2="49.403" width="0" layer="19" extent="1-1"/>
+<wire x1="46.736" y1="46.99" x2="52.578" y2="45.593" width="0" layer="19" extent="1-1"/>
+<wire x1="45.5422" y1="38.227" x2="46.736" y2="46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="70.4596" y1="45.5422" x2="60.96" y2="58.42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V_ARD">
 <contactref element="HC-SR04" pad="4"/>

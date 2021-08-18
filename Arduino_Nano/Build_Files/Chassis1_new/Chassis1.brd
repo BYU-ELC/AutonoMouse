@@ -823,7 +823,7 @@ design rules under a new name.</description>
 </element>
 <element name="U$1" library="AndysLib" package="DUMMY" value="FRAME-BADGE" x="28.5242" y="53.3654" smashed="yes" rot="R90"/>
 <element name="9V_BATT" library="SparkFun-Connectors" package="1X02" value="" x="60.7822" y="50.927" smashed="yes" rot="R270">
-<attribute name="NAME" x="64.8208" y="56.9468" size="1.27" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="NAME" x="64.8208" y="54.4068" size="1.27" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="58.7502" y="52.197" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="S1" library="switch" library_urn="urn:adsk.eagle:library:380" package="TL3XPO" package3d_urn="urn:adsk.eagle:package:27745/1" value="TL36PO" x="54.7116" y="51.6382" smashed="yes" rot="R270">

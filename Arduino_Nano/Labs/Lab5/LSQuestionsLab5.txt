@@ -2,4 +2,4 @@
 2. What does PCB stand for?
 3. What two kinds of PCBs are there?
 4. Did you solder the components to the PCB?
-5. Did you test your PCB by uploading some code to you Arduino Nano from a previous lab?
+5. Did you test your PCB by uploading some code to your Arduino Nano from a previous lab?
