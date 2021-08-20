@@ -1,6 +1,6 @@
-## AutonoMouse
+# AutonoMouse
 
-# Introduction
+## Introduction
 Lightweight and low cost autonomous robotics platform for students to gain skills and have fun!
 
 There are two version to this project. 
@@ -12,8 +12,8 @@ allow's the user to put the car into remote control mode where the user can cont
 using an Android smartphone. This doesn't work with an IPhone because there are not opensource bluetooth apps 
 that I know of in the App Store. 
 
-# Things to Change
-Fix the circuit: When Arduino is plugged into the computer placed inside the pcb the AMS1117 voltage regulator on the Arduino gets really hot.
+## Things to Change
+Fix the circuit: When Arduino is plugged into the computer and placed inside the pcb the AMS1117 voltage regulator on the Arduino gets really hot.
 I think it's because the VIN Pin has a direct path to ground through the switch so it's passing a lot of current and gets hot to let off the energy converted. 
 I've made a new PCB named Chassis1.1 in the build files that includes a reverse power diode. 
 To run with Chassis1.0 the user needs to take out the Arduino to program it and then reinsert it into the PCB.
