@@ -1,4 +1,6 @@
-# AutonoMouse
+## AutonoMouse
+
+# Introduction
 Lightweight and low cost autonomous robotics platform for students to gain skills and have fun!
 
 There are two version to this project. 
