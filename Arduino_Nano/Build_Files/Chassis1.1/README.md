@@ -1,0 +1,1 @@
+Chassis1.1 is a revision of the previous Chassis1.0. It adds a reverse current protection diode. 

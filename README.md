@@ -11,13 +11,16 @@ using an Android smartphone. This doesn't work with an IPhone because there are 
 that I know of in the App Store. 
 
 # Things to Change
-Fix the circuit. When Arduino is plugged into the computer placed inside the pcb the AMS1117 voltage regulator on the Arduino gets really hot.
-It's because the VIN Pin has a direct path to ground through the switch so it's passing a lot of current and gets hot to let off the energy converted. 
-Is there way to fix this with a diode? I'm not the best with circuits.
-Right now I have to take out the Nano to program it, place it back in, and then power it with the battery. The switch is flipped with the battery activated so there's not the problem with the voltage regulator. 
+Fix the circuit: When Arduino is plugged into the computer placed inside the pcb the AMS1117 voltage regulator on the Arduino gets really hot.
+I think it's because the VIN Pin has a direct path to ground through the switch so it's passing a lot of current and gets hot to let off the energy converted. 
+I've made a new PCB named Chassis1.1 in the build files that includes a reverse power diode. 
+To run with Chassis1.0 the user needs to take out the Arduino to program it and then reinsert it into the PCB.
+
+Clean up the circuity more.
 
 More accessibility for linux and Apple users. Document how to download Arduino IDE and how to interfaces with Arduino devices.
 
-Finish development for V2. 
+Finish development for V2. Mostly needs work with the servos. I would also suggest removing the ultrasonic sensor and servos and replacing 
+them with a cheap motor driver and simple motors to make a faster rc car. 
 
 
