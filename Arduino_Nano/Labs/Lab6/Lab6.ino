@@ -11,8 +11,7 @@
 
 #define RightServoStop 111
 #define RightServoBackward 180
-#define RightServoForward 0
-
+#define RightServoForward 0 
 
 NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
 Servo LeftServo;
