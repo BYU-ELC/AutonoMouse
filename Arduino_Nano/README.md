@@ -1,11 +1,7 @@
 # Arduino Nano version of the Autonomouse
 
 ## PCB
-Recommended: In Build_Files folder, mill Chassis1.0 using the build files provided. 
-
-NOT TESTED: This is not recommended for ECEN191 as diodes are not covered in the labs. Chassis1.1 fixes the issue 
-programming Arduino Nano while it is inserted into the PCB by using reverse diode protection. You will
-need to understand how to solder the diode to the PCB and buy the proper diode. Use the 1N4004.
+Recommended: Use gerber files in Build_Files->Chassis1.1->Chasiss1.1_2021-09-01.zip. 
 
 ## Acrylic Base
 Laser cut the acrylic base using Arduino_Nano_chassis.svg in Build_Files folder. 
