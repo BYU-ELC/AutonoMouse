@@ -3017,11 +3017,6 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <wire x1="167.64" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
 <label x="163.068" y="91.44" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="NANO" gate="G$1" pin="VIN"/>
-<wire x1="50.8" y1="60.96" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
-<label x="50.8" y="60.96" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="RIGHT_SERVO" class="0">
 <segment>
@@ -3079,6 +3074,11 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <pinref part="S1" gate="BEF1" pin="P"/>
 <wire x1="43.18" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
 <junction x="58.42" y="96.52"/>
+</segment>
+<segment>
+<pinref part="NANO" gate="G$1" pin="VIN"/>
+<wire x1="50.8" y1="60.96" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
+<label x="50.8" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LEFT_SERVO" class="0">
