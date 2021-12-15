@@ -1,15 +1,24 @@
-#include <NewPing.h>
-#include <Servo.h>
+// Lab_06 code
+// AutonoMouse control
 
+// libraries ...if there is an error saying it doesn't exist... you will need to add the libraries to your arduino IDE
+// ... tools -> Manage Libraries -> enter library name -> install
+#include <NewPing.h> // makes ultrasonic sensor easier to use
+#include <Servo.h>   // for servos
+
+// constants for...
+// ...ultrasonic sensor
 #define TRIGGER_PIN 6
 #define ECHO_PIN 7
 #define MAX_DISTANCE 200
 
-#define LeftServoStop 106
+// ...left servo
+#define LeftServoStop 90 //was 106
 #define LeftServoBackward 0
-#define LeftServoForward 140
+#define LeftServoForward 180 //was 140
 
-#define RightServoStop 111
+// ...right servo
+#define RightServoStop 90 //was 111
 #define RightServoBackward 180
 #define RightServoForward 0 
 
@@ -34,9 +43,9 @@ void loop() {
   }  while (distance > 10 || distance == 0);
   delay(500);
   DriveBackward(500);
-//  DriveStraight(500);
 }
 
+// various and (optional) functions used in the main "void loop" loop
 int DriveStraight(int time){
   LeftServo.write(LeftServoForward);
   RightServo.write(RightServoForward);
