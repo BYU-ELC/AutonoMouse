@@ -13,7 +13,7 @@ Servo myservo;
 
 void setup() {
   Serial.begin(9600);  // start serial monitor
-  myservo.attach(11);  // attaches the servo control wire to pin 9
+  myservo.attach(9);  // attaches the servo control wire to pin 9
 }
 
 // spin clockwise (to comment, use "/*" and "*/" or "//")
