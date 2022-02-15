@@ -3,8 +3,8 @@
 // This program measures the time it takes a sound wave to travel to, and bounce back from an object in front of the sensor,
 // and calculates the distance (in cm) that object is, based on the speed of sound
 
-#define echoPin 11 // attach pin D2 Arduino to pin Echo of HC-SR04
-#define trigPin 12 // attach pin D3 Arduino to pin Trig of HC-SR04
+#define echoPin 7 // attach pin D7 Arduino to pin Echo of HC-SR04
+#define trigPin 6 // attach pin D6 Arduino to pin Trig of HC-SR04
 
 // variables
 long duration; // variable for the duration of sound wave travel
